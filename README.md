@@ -43,7 +43,7 @@ package-b/
 ```json
 {
   "dependencies" : {
-    "@fiverr/webpack-get-aliases" : "1.0.0"
+    "@fiverr/webpack-get-aliases" : "^1.0.0"
   }
 }
 ```

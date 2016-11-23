@@ -43,14 +43,14 @@ package-b/
 ```json
 {
   "dependencies" : {
-    "@fiverr/webpack-get-aliases" : "^1.0.0"
+    "webpack-get-aliases" : "^1.0.0"
   }
 }
 ```
 #### webpack.config.js
 ```js
 const pkgJson = require('./package.json');
-const getAliases = require('@fiverr/webpack-get-aliases');
+const getAliases = require('webpack-get-aliases');
 
 module.exports = {
   ...

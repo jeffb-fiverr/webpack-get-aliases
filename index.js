@@ -23,8 +23,8 @@ function getDepListAliases(depList) {
 
 module.exports = function(pkg) {
 
-    var depsAliases = iterator(pkg.dependencies),
-        devDepsAliases = iterator(pkg.devDependencies);
+    var depsAliases = getDepListAliases(pkg.dependencies),
+        devDepsAliases = getDepListAliases(pkg.devDependencies);
 
     return _.extend(devDepsAliases, depsAliases);
 };

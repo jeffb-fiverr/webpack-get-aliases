@@ -1,5 +1,5 @@
 # webpack-get-aliases
-### by Jeff Borders (@jeffb-fiverr)
+### by Jeff Borders (<a href="https://github.com/jeffb-fiverr">@jeffb-fiverr</a>)
 
 > Get all aliases contained in package.json dependencies and dev-dependency packages
 

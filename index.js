@@ -9,7 +9,7 @@ function getDepListAliases(depList) {
 
         if (!_.has(depList, pkgName)) return;
 
-        currPkg = require('./node_modules/' + pkgName + '/package.json');
+        currPkg = require(process.env.PWD + '/node_modules/' + pkgName + '/package.json');
 
         if (!currPkg.moduleAliases) return;
 

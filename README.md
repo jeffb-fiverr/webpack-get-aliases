@@ -6,7 +6,7 @@
 
 ## Usage
 #### package.json
-```
+```json
 {
   "dependencies" : {
     "@fiverr/webpack-get-aliases" : "1.0.0"
@@ -14,7 +14,7 @@
 }
 ```
 #### webpack.config.js
-```
+```js
 const pkgJson = require('./package.json');
 const getAliases = require('@fiverr/webpack-get-aliases');
 
@@ -28,26 +28,26 @@ module.exports = {
 
 #### JS
 Instead of:
-```
+```js
 import MyFile from 'package-b/dist/js/MyFile';
 ```
 
 Now you can do (based on the `moduleAliases` property in `package-b/package.json`):
-```
+```js
 import MyFile from 'package-b/MyFile';
 ```
 
 ## Example use-case:
 
 ##### "package-a" package.json:
-```
+```json
 dependencies: {
     "package-b" : "^1.0.0",
 }
 ```
 
 ##### "package-b" directory structure:
-```
+```json
 package-b/
  - dist/
    - js/
@@ -58,7 +58,7 @@ package-b/
  ```
 
 ##### "package-b" package.json
-```
+```json
 {
   "moduleAliases" : {
     "package-b/MyFile" : "package-b/dist/js/MyFile"
